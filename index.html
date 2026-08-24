@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="theme-color" content="#2E6BFF"/>
+  <title>浅奥乐园 · 小学生奥数学习系统</title>
+  <link rel="stylesheet" href="assets/css/styles.css?v=11"/>
+</head>
+<body>
+  <!-- 桌面端左侧固定导航（移动/平板隐藏） -->
+  <nav class="side-nav" id="sideNav"></nav>
+
+  <!-- 主内容区 -->
+  <main id="app"></main>
+
+  <!-- 移动/平板底部标签栏 -->
+  <nav class="tabbar" id="tabbar"></nav>
+
+  <!-- 依赖顺序：数据 → 课程讲义 → 动画引擎 → 世界观 → 脚本数据层 → 存储 → 路由 → 趣味引擎 → 播放器 → 难度 → 交互 → 奖励扩展 → 节奏 → 应用
+       （world.js 在 anim-scripts.js 之前：anim-scripts 的 8 个专属脚本构建时引用 QIAO_WORLD） -->
+  <script src="assets/js/data.js?v=11"></script>
+  <script src="assets/js/courses.js?v=11"></script>
+  <script src="assets/js/anim.js?v=11"></script>
+  <script src="assets/js/world.js?v=11"></script>
+  <script src="assets/js/anim-scripts.js?v=11"></script>
+  <script src="assets/js/store.js?v=11"></script>
+  <script src="assets/js/router.js?v=11"></script>
+  <script src="assets/js/fun.js?v=11"></script>
+  <script src="assets/js/anim-player.js?v=11"></script>
+  <script src="assets/js/difficulty.js?v=11"></script>
+  <script src="assets/js/interactions.js?v=11"></script>
+  <script src="assets/js/fun-extra.js?v=11"></script>
+  <script src="assets/js/rhythm.js?v=11"></script>
+  <script src="assets/js/app.js?v=11"></script>
+</body>
+</html>
